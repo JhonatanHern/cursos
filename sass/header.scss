@@ -5,8 +5,9 @@ $shadow : 5px 5px 5px black;
 
 *{
 	box-sizing: border-box;
-	transition-duration: 1s;
+	transition-duration: 0.5s;
 	transition-timing-function: ease-in-out;
+	font-family: 'Century Gothic',sans-serif;
 }
 body{
 	margin: 0;
@@ -14,21 +15,44 @@ body{
 	width: 100%;
 }
 header{
+	height:100vh;
 	nav{
+		width: 100%;
 		ul{
+			display: flex;
+			list-style: none;
 			position: fixed;
+			top: 0;
 			width: 100%;
+			margin: 0;
+			padding-left: 0;
 			border:{
 				top: $global-border;
 				left: $global-border;
 				bottom: $global-border;
 			}
 			li{
+				flex-grow: 1;
 				border-right: $global-border;
-				&:hover{}
+				&:hover{
+					background-color: black;
+					color: white;
+				}
+				@media(max-width: $lil-screen-breakpoint) {
+				}
+				@media(min-width: $screen-breakpoint) {
+					padding:1.5vh;
+					font-size: 4vh;
+				}
 			}
-			@media(max-width: $lil-screen-breakpoint) {}
+			@media(max-width: $lil-screen-breakpoint) {
+				flex-direction: column;
+
+			}
 			@media(min-width: $screen-breakpoint) {}
 		}
 	}
+}
+h1{
+	margin-top: 0;
 }

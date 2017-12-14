@@ -1,3 +1,7 @@
+	$screen-breakpoint : 700px;
+$lil-screen-breakpoint : 699px;
+$global-border : 4px solid black;
+$shadow : 5px 5px 5px black;
 main{
 	width:100%;
 	#fichas{
@@ -13,4 +17,3 @@ main{
 		}
 	}
 }
-footer{}

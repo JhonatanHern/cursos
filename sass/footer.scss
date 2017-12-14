@@ -1,0 +1,27 @@
+	$screen-breakpoint : 700px;
+$lil-screen-breakpoint : 699px;
+
+footer{
+	background-color:white;
+	color:black;
+	a{
+		color:inherit;
+		text-decoration:underline;
+	}
+	#footerStarter{
+		display: flex;
+		justify-content: space-around;
+		aside{
+			flex-grow: 1;
+		}
+		@media(max-width: $lil-screen-breakpoint) {
+			flex-direction: column;
+			aside{
+				width: 80%;
+				margin-top: 1px solid black;
+			}
+		}
+		@media(min-width:$screen-breakpoint) {
+		}
+	}
+}

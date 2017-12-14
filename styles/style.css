@@ -1,0 +1,93 @@
+main {
+  width: 100%; }
+  main #fichas .card {
+    -webkit-box-shadow: 5px 5px 5px black;
+            box-shadow: 5px 5px 5px black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (max-width: 699px) {
+      main #fichas .card {
+        width: 80%; } }
+    @media (min-width: 700px) {
+      main #fichas .card {
+        width: 30%; } }
+
+footer {
+  background-color: white;
+  color: black; }
+  footer a {
+    color: inherit;
+    text-decoration: underline; }
+  footer #footerStarter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    footer #footerStarter aside {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+    @media (max-width: 699px) {
+      footer #footerStarter {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        footer #footerStarter aside {
+          width: 80%;
+          margin-top: 1px solid black; } }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  font-family: 'Century Gothic',sans-serif; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+header {
+  height: 100vh; }
+  header nav {
+    width: 100%; }
+    header nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      list-style: none;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      margin: 0;
+      padding-left: 0;
+      border-top: 4px solid black;
+      border-left: 4px solid black;
+      border-bottom: 4px solid black; }
+      header nav ul li {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        border-right: 4px solid black; }
+        header nav ul li:hover {
+          background-color: black;
+          color: white; }
+        @media (min-width: 700px) {
+          header nav ul li {
+            padding: 1.5vh;
+            font-size: 4vh; } }
+      @media (max-width: 699px) {
+        header nav ul {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
+
+h1 {
+  margin-top: 0; }

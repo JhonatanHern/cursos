@@ -24,4 +24,4 @@ gulp.task('watch', function() {
 	gulp.watch('views/*.pug'  , ['views' ])
 })
 
-gulp.task('default', ['views','styles','watch'])
+gulp.task('default', ['views','styles'])
