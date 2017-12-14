@@ -1,0 +1,16 @@
+main{
+	width:100%;
+	#fichas{
+		.card{
+			box-shadow: $shadow;
+			display: flex;
+			@media(max-width: $lil-screen-breakpoint) {
+				width: 80%;
+			}
+			@media(min-width:$screen-breakpoint) {
+				width: 30%;
+			}
+		}
+	}
+}
+footer{}

@@ -1,0 +1,34 @@
+	$screen-breakpoint : 700px;
+$lil-screen-breakpoint : 699px;
+$global-border : 4px solid black;
+$shadow : 5px 5px 5px black;
+
+*{
+	box-sizing: border-box;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+header{
+	nav{
+		ul{
+			position: fixed;
+			width: 100%;
+			border:{
+				top: $global-border;
+				left: $global-border;
+				bottom: $global-border;
+			}
+			li{
+				border-right: $global-border;
+				&:hover{}
+			}
+			@media(max-width: $lil-screen-breakpoint) {}
+			@media(min-width: $screen-breakpoint) {}
+		}
+	}
+}

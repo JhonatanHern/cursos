@@ -1,0 +1,36 @@
+{
+  "name": "cursos",
+  "version": "1.0.0",
+  "description": "front-end proyect",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhonatanHern/cursos.git"
+  },
+  "keywords": [
+    "sass",
+    "css3",
+    "gulp",
+    "html"
+  ],
+  "author": "JhonatanHern",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JhonatanHern/cursos/issues"
+  },
+  "homepage": "https://github.com/JhonatanHern/cursos#readme"
+}
