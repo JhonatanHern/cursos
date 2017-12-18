@@ -51,7 +51,8 @@ footer {
 body {
   margin: 0;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
 
 header {
   height: 100vh; }
@@ -61,8 +62,8 @@ header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      list-style: none;
       position: fixed;
+      list-style: none;
       top: 0;
       width: 100%;
       margin: 0;
@@ -88,6 +89,13 @@ header {
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
                   flex-direction: column; } }
+  header img {
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
 h1 {
   margin-top: 0; }
