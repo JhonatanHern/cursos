@@ -1,18 +1,36 @@
 	$screen-breakpoint : 700px;
 $lil-screen-breakpoint : 699px;
 $global-border : 4px solid black;
-$shadow : 5px 5px 5px black;
+$shadow : 5px 5px 5px silver;
 main{
 	width:100%;
 	#fichas{
+		display: flex;
+		flex-wrap: wrap;
+		margin:{
+			top: 5vh;
+			left: 5vw;
+			right: 5vw;
+			bottom: 10vh;
+		}
+		justify-content: space-around;
 		.card{
+			padding: 1em;
+			position: relative;
 			box-shadow: $shadow;
-			display: flex;
+			display: inline-block;
+			margin-bottom: 1em;
 			@media(max-width: $lil-screen-breakpoint) {
 				width: 80%;
 			}
 			@media(min-width:$screen-breakpoint) {
 				width: 30%;
+			}
+			&:hover{
+				transform: scale(1.1);
+			}
+			img{
+				width: 100%;
 			}
 		}
 	}

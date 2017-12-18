@@ -4,16 +4,17 @@ $lil-screen-breakpoint : 699px;
 footer{
 	background-color:white;
 	color:black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	a{
 		color:inherit;
 		text-decoration:underline;
 	}
 	#footerStarter{
+		width:100%;
 		display: flex;
 		justify-content: space-around;
-		aside{
-			flex-grow: 1;
-		}
 		@media(max-width: $lil-screen-breakpoint) {
 			flex-direction: column;
 			aside{
@@ -23,5 +24,23 @@ footer{
 		}
 		@media(min-width:$screen-breakpoint) {
 		}
+		aside{
+			text-align: center;
+			flex-grow: 1;
+		}
+	}
+	#copyright,#icons{
+		width: 40%;
+		font-size: 1.3em;
+		text-align: center;
+		margin: {
+			top: 2em;
+			bottom: 2em;
+		}
+	}
+	#design{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 2em;
 	}
 }
