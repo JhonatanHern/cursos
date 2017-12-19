@@ -2,7 +2,7 @@
 	$recaptcha = $_POST["g-recaptcha-response"];
 	$url = 'https://www.google.com/recaptcha/api/siteverify';
 	$data = array(
-		'secret' => 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+		'secret' => 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
 		'response' => $recaptcha
 	);
 	$options = array(

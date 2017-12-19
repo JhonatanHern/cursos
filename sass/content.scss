@@ -40,8 +40,9 @@ main{
 	img{
 		width: 80%;
 		margin-left: 10%;
+		margin-bottom: 2em;
 	}
-	p{
+	p,ul,h3{
 		width: 80%;
 		margin-left: 10%;
 		@media(max-width: $lil-screen-breakpoint) {
