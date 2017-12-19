@@ -89,7 +89,7 @@ html
 				a(rel="follow" href="https://github.com/JhonatanHern")
 					i(class='fa fa-github')
 		section#form
-			form#contact
+			form#contact(action="sendmail.php" method="POST")
 				h2 Contáctanos
 				input(type="email" placeholder="Correo" name="mail" required)
 				input(type="text" placeholder="Nombre y Apellido" name="name" required)
@@ -97,8 +97,8 @@ html
 				input(type="number" placeholder="Teléfono" name="phone" required)
 				textarea(placeholder="Mensaje" name="msj" required)
 				div#captcha
-					div(style="" class="g-recaptcha" data-sitekey="6LfSCDwUAAAAAFCIAk7lPT-SBXCq_7JtiHIDwWYh")
-				input(type="submit" placeholder="Enviar")
-	script(async src="js/show.js")
-	script(async src="https://www.gstatic.com/recaptcha/api2/r20171212152908/recaptcha__es_419.js")
-	link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+					div(class="g-recaptcha" data-sitekey="6LfSCDwUAAAAAFCIAk7lPT-SBXCq_7JtiHIDwWYh")
+				input(type="submit" value="Enviar")
+		script(async src="js/show.js")
+		script(async src="https://www.google.com/recaptcha/api.js")
+		link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
