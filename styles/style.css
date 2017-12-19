@@ -15,10 +15,11 @@ main {
     main #fichas .card {
       padding: 1em;
       position: relative;
-      -webkit-box-shadow: 5px 5px 5px silver;
-              box-shadow: 5px 5px 5px silver;
+      -webkit-box-shadow: 10px 10px 5px silver;
+              box-shadow: 10px 10px 5px silver;
       display: inline-block;
-      margin-bottom: 1em; }
+      margin-bottom: 1em;
+      cursor: pointer; }
       @media (max-width: 699px) {
         main #fichas .card {
           width: 80%; } }
@@ -30,6 +31,21 @@ main {
                 transform: scale(1.1); }
       main #fichas .card img {
         width: 100%; }
+
+#start img {
+  width: 80%;
+  margin-left: 10%; }
+
+#start p {
+  width: 80%;
+  margin-left: 10%; }
+  @media (max-width: 699px) {
+    #start p {
+      font-size: 1em; } }
+  @media (min-width: 700px) {
+    #start p {
+      font-size: 1.3em;
+      margin-bottom: 2em; } }
 
 footer {
   background-color: white;
@@ -59,7 +75,10 @@ footer {
                 flex-direction: column; }
         footer #footerStarter aside {
           width: 80%;
-          margin-top: 1px solid black; } }
+          margin-left: 10%;
+          border-top: 1px solid #888;
+          padding-top: 1em;
+          padding-bottom: 1em; } }
     footer #footerStarter aside {
       text-align: center;
       -webkit-box-flex: 1;
@@ -71,6 +90,8 @@ footer {
     text-align: center;
     margin-top: 2em;
     margin-bottom: 2em; }
+    footer #copyright a, footer #icons a {
+      margin-right: 1em; }
   footer #design {
     width: 100%;
     text-align: center;
@@ -79,8 +100,8 @@ footer {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   font-family: 'Century Gothic',sans-serif; }
@@ -102,7 +123,6 @@ header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      position: fixed;
       list-style: none;
       top: 0;
       width: 100%;
@@ -132,7 +152,11 @@ header {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
-                  flex-direction: column; } }
+                  flex-direction: column;
+          position: absolute; } }
+      @media (min-width: 700px) {
+        header nav ul {
+          position: fixed; } }
   header img {
     z-index: 1;
     width: 100vw;
@@ -143,7 +167,8 @@ header {
             transform: translate(-50%, -50%) scale(0.8); }
 
 h1 {
-  margin-top: 0; }
+  margin-top: 0;
+  padding-left: 1em; }
 
 a {
   color: inherit; }

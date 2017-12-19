@@ -19,7 +19,10 @@ footer{
 			flex-direction: column;
 			aside{
 				width: 80%;
-				margin-top: 1px solid black;
+				margin-left: 10%;
+				border-top: 1px solid #888;
+				padding-top: 1em;
+				padding-bottom: 1em;
 			}
 		}
 		@media(min-width:$screen-breakpoint) {
@@ -36,6 +39,9 @@ footer{
 		margin: {
 			top: 2em;
 			bottom: 2em;
+		}
+		a{
+			margin-right: 1em;
 		}
 	}
 	#design{

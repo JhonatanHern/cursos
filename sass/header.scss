@@ -12,7 +12,7 @@ $letter-color : #333 ;
 }
 *{
 	box-sizing: border-box;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
 	font-family: 'Century Gothic',sans-serif;
 }
@@ -31,7 +31,6 @@ header{
 			background-color:rgba(255,255,255,0.9);
 			z-index: 99999;
 			display: flex;
-			position: fixed;
 			list-style: none;
 			top: 0;
 			width: 100%;
@@ -63,9 +62,12 @@ header{
 			}
 			@media(max-width: $lil-screen-breakpoint) {
 				flex-direction: column;
+				position: absolute;
 
 			}
-			@media(min-width: $screen-breakpoint) {}
+			@media(min-width: $screen-breakpoint) {
+				position: fixed;
+			}
 		}
 	}
 	img{
@@ -76,6 +78,7 @@ header{
 }
 h1{
 	margin-top: 0;
+	padding-left: 1em;
 }
 a{
 	color:inherit;

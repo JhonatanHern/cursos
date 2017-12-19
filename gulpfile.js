@@ -22,7 +22,7 @@ function buildHTML() {
 }
 
 gulp.task( 'styles' , buildCSS )
-gulp.task( 'views' , buildHTML )
+gulp.task( 'views'  , buildHTML )
 
 gulp.task('watch', function() {
 	gulp.watch('styles/*.scss', ['styles'])
