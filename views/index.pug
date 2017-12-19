@@ -25,25 +25,26 @@ html
 					li
 						a(href="https://serofca.wordpress.com")
 							|Blog
-			img(src="images/lpng.PNG")
+			img(src="images/lsvg.svg")
 		main
 			h1 Cursos de Radiología - SEROFCA
 			section(id="fichas")
 				a(class="card" href="1.html#start")
-					img(src='images/lpng.PNG')
+					img(src='images/1.jpg')
 					p Curso de Protección Radiológica de 24 horas
 				a(class="card" href="2.html#start")
-					img(src='images/lpng.PNG')
+					img(src='images/RXdent2.jpg')
 					p Curso de Protección Radiológica de 24 horas Odontológico (Dirigido al personal técnico, odontólogos e higienistas)
 				a(class="card" href="3.html#start")
-					img(src='images/lpng.PNG')
+					img(src='images/MMX3.jpg')
 					p Taller: “Las diferentes visiones de la Mama” duración 16 horas
 				a(class="card" href="4.html#start")
-					img(src='images/lpng.PNG')
+					img(src='images/2.jpg')
 					p Curso “Protección Radiológica al Desnudo”  duración 2 horas
 				a(class="card" href="5.html#start")
-					img(src='images/lpng.PNG')
+					img(src='images/ProtecRX1.jpg')
 					p Taller de emergencias Radiológicas 16 horas.
+			button.form-trigger Contáctanos
 		footer
 			section(id="footerStarter")
 				aside
@@ -87,4 +88,17 @@ html
 					i(class='fa fa-codepen') 
 				a(rel="follow" href="https://github.com/JhonatanHern")
 					i(class='fa fa-github')
+		section#form
+			form#contact
+				h2 Contáctanos
+				input(type="email" placeholder="Correo" name="mail" required)
+				input(type="text" placeholder="Nombre y Apellido" name="name" required)
+				input(type="text" placeholder="País" name="country" required)
+				input(type="number" placeholder="Teléfono" name="phone" required)
+				textarea(placeholder="Mensaje" name="msj" required)
+				div#captcha
+					div(style="" class="g-recaptcha" data-sitekey="6LfSCDwUAAAAAFCIAk7lPT-SBXCq_7JtiHIDwWYh")
+				input(type="submit" placeholder="Enviar")
+	script(async src="js/show.js")
+	script(async src="https://www.gstatic.com/recaptcha/api2/r20171212152908/recaptcha__es_419.js")
 	link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")

@@ -1,6 +1,13 @@
 	$screen-breakpoint : 700px;
 $lil-screen-breakpoint : 699px;
 
+@mixin perfect-centering{
+	position : absolute;
+	top: 50%;
+	left: 50%;
+	transform : translate(-50%,-50%);
+}
+
 footer{
 	background-color:white;
 	color:black;
@@ -48,5 +55,33 @@ footer{
 		width: 100%;
 		text-align: center;
 		margin-bottom: 2em;
+	}
+}
+
+#form{//form wrapper
+	width: 100vw ;
+	height:100vh ;
+	top:0;
+	left:0;
+	display : none  ;
+	position: fixed ;
+	background-color:rgba(0,0,0,0.7);
+	animation:fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn{
+	0%{opacity: 0}
+	100%{opacity: 1}
+}
+#contact{//real form
+	max-height: 95vh;
+	@include perfect-centering;
+	background-color:white;
+	color:#333;
+	padding:1em;
+	overflow-y: auto;
+	input,textarea{
+		width: 100%;
+		display:block;
+		margin-bottom: 0.5em;
 	}
 }
